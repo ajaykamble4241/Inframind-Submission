@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>AdminMain</title>
+        
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>     
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>   
+        <style>
+             
+
+            body{
+                font-family: latha;
+                color: white;
+                background: url(healthcarebackground.jpg);
+            }
+
+
+        </style>
+
+    </head>
+    <body class="h-100">
+
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <div class="container-fluid">
+                <ul class ="nav navbar-nav">
+                    <li class="active">
+                        <a class="navbar-brand" style="color: whitesmoke; text-decoration-style: wavy;" href="#">
+                            Smart Healthcare App
+                        </a>
+
+                    </li>
+                   
+                </ul>
+
+                <div class="nav-link-right">
+                    <button id="btn-signout" type="button" onclick="logout()">
+                        Logout
+                        <i class="zmdi zmdi-arrow-right"></i>
+                        
+                        
+                        
+                    </button>
+                </div>
+                
+
+            </div>
+
+            
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+         <div class="Sidebar">
+            <ul class ="nav navbar-nav">
+                <li><a class="navbar-brand" style=" text-decoration-style: wavy;" href="DisplayUserHealthParameters.html">User's Health Parameter</a></li>
+                <li><a class="navbar-brand" style=" text-decoration-style: wavy;" href="Health_result.html">Health Results</a></li>
+                <li><a class="navbar-brand" style=" text-decoration-style: wavy;" href="DisplayUser.html">User Information</a></li>
+               
+    
+       <script>
+           var firebaseConfig = {
+           apiKey: "AIzaSyBh4flV2DkLnOqzrr47Cuoc78RKAl8DRB0",
+           authDomain: "smarthealth-c1455.firebaseapp.com",
+           databaseURL: "https://smarthealth-c1455.firebaseio.com",
+           projectId: "smarthealth-c1455",
+           storageBucket: "smarthealth-c1455.appspot.com",
+           messagingSenderId: "878963568953",
+           appId: "1:878963568953:web:4a2c7b3e52bf7bc02338e8",
+           measurementId: "G-D7305TENNJ"
+          };
+          // Initialize Firebase
+         
+          firebase.initializeApp(firebaseConfig);
+
+         
+           
+       </script>
+       <script src="js/logout.js"></script>
+       
+      
+
+
+
+        
+        
+    </body>
+</html>

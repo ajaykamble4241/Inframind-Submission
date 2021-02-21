@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DisplayUser</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>     
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+        <style>
+             
+
+            body{
+                font-family: latha;
+                color: white;
+                background: url(healthcarebackground.jpg);
+            }
+
+            h1{
+                text-align: center;
+                font-family: latha;
+                color: white;
+                text-size-adjust: 30px;
+            }
+
+
+        </style>
+    </head>
+    <body class="h-100">
+        <h1>Employees Profile Information</h1>
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <th>Uno.</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                </thead>
+                 
+                <tbody id="tbody1">
+                    
+                   
+                </tbody>
+                  
+              </table>
+          </div>
+
+
+          <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+
+      
+        <script>
+            var firebaseConfig = {
+              apiKey: "AIzaSyBh4flV2DkLnOqzrr47Cuoc78RKAl8DRB0",
+              authDomain: "smarthealth-c1455.firebaseapp.com",
+              databaseURL: "https://smarthealth-c1455.firebaseio.com",
+              projectId: "smarthealth-c1455",
+              storageBucket: "smarthealth-c1455.appspot.com",
+              messagingSenderId: "878963568953",
+              appId: "1:878963568953:web:4a2c7b3e52bf7bc02338e8",
+              measurementId: "G-D7305TENNJ"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+//-----------------------------Get Data---------------------------------------------
+             function SelectAllData(){
+                 firebase.database().ref('User').once('value',
+                 function(AllRecords){
+                     AllRecords.forEach(
+                         function(CurrentRecord){
+                             var name = CurrentRecord.val().Name;
+                             var mail = CurrentRecord.val().email;
+                             var phone = CurrentRecord.val().phone;
+                             var age = CurrentRecord.val().age;
+                             var gen = CurrentRecord.val().gender;
+                             AddItemToTable(name,mail,phone,age,gen);
+                         }
+                     );
+                 });
+             }
+
+             window.onload = SelectAllData;
+
+//-------------------------------FILLING THE TABLE------------------------------------------------
+            function AddItemToTable(name,mail,phone,age,gen){
+            var udtno = 0;    
+            var tbody = document.getElementById('tbody1');
+            var trow = document.createElement('tr');
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+            var td4 = document.createElement('td');
+            var td5 = document.createElement('td');
+            var td6 = document.createElement('td');
+
+            td1.innerHTML= ++udtno;
+            td2.innerHTML= name;
+            td3.innerHTML= mail;
+            td4.innerHTML= phone;
+            td5.innerHTML= age;
+            td6.innerHTML= gen;
+
+            trow.appendChild(td1);
+            trow.appendChild(td2);
+            trow.appendChild(td3);
+            trow.appendChild(td4);
+            trow.appendChild(td5);
+            trow.appendChild(td6);
+
+            tbody.appendChild(trow)
+            
+
+            }             
+
+        </script>
+       
+    </body>
+</html>
