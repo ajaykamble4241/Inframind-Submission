@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "878963568953",
+    "firebase_url": "https://smarthealth-c1455.firebaseio.com",
+    "project_id": "smarthealth-c1455",
+    "storage_bucket": "smarthealth-c1455.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878963568953:android:cbf03ef1b7768e8a2338e8",
+        "android_client_info": {
+          "package_name": "com.example.shadowsorland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878963568953-38v51mssvn0anc8jriu05s2u0kj5gg6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGmUZpNGzFs11zlkjbJv1Vsa_LxJW3kb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878963568953-38v51mssvn0anc8jriu05s2u0kj5gg6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

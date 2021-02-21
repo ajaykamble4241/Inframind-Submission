@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dash1"
+    android:background="@drawable/custom_text">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:text="Health Parameter"
+        android:textColor="#151515"
+        android:textSize="45sp"
+        android:textStyle="italic|bold" />
+
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="119dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="335dp"
+        android:text="Heart Beat"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/c11"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="270dp"
+        android:text="Temperature"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="118dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="400dp"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="410dp"
+        android:text="Blood Oxygen Level"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="112dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="400dp"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="480dp"
+        android:text="Blood Glucose Level"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="550dp"
+        android:text="Blood Pressure Level"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textViewRR"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="610dp"
+        android:text="Respiration Rate"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="35dp">
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="270dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pluseR"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="334dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/oxy"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="408dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:id="@+id/glucoseL"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="482dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="550dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/RespirationR"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="410dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="620dp"
+        android:text="00.00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_width="68dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="51dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="260dp"
+
+
+            app:srcCompat="@drawable/tempp" />
+
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="330dp"
+            app:srcCompat="@drawable/pluse" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="590dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="400dp"
+            app:srcCompat="@drawable/o2" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="590dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="470dp"
+            app:srcCompat="@drawable/glucose" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="590dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="540dp"
+            app:srcCompat="@drawable/pressure" />
+
+        <ImageView
+            android:id="@+id/imageViewRR"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="590dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="610dp"
+            app:srcCompat="@drawable/respiration" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
